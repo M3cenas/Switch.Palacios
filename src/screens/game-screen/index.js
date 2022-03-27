@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import { View, Text, Button, Alert } from 'react-native'
 import { styles } from './style'
+import { colors } from '../../constants/theme'
 import Card from '../../components/card'
 import Header from '../../components/header'
 import useOrientation from '../../hooks/use-orientation'
@@ -50,8 +51,8 @@ const GameScreen = ({ userOptions, onGameOver }) => {
                 <Text style={styles.cardTitle}>La suposición del oponentes</Text>
                 <Text style={styles.confirmedText}>{currentGuess}</Text>
                 <View style={styles.buttonsContainer}>
-                    <Button title='Menor' onPress={() => handlerNextGuess('lower')} color='#52528C'/>
-                    <Button title='Mayor' onPress={() => handlerNextGuess('greater')} color='#52528C'/>
+                    <Button title='Menor' onPress={() => handlerNextGuess('lower')} color={colors.primary}/>
+                    <Button title='Mayor' onPress={() => handlerNextGuess('greater')} color={colors.primary}/>
                 </View>            
             </Card>
         </View>

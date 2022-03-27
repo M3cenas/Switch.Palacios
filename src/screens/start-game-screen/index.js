@@ -49,7 +49,7 @@ const StartGameScreen = ({ onStartGame }) => {
             <Text style={styles.cardTitle}>Tu Selección</Text>
             <Text style={styles.confirmedText}>{selectedNumber}</Text>
             <View style={styles.buttonsContainer}>
-                <Button title='Empezar Juego' onPress={() => onStartGame(selectedNumber)} color='#52528C'/>
+                <Button title='Empezar Juego' onPress={() => onStartGame(selectedNumber)} color={colors.primary}/>
             </View>
         </Card>
     ) : null;
@@ -81,8 +81,8 @@ const StartGameScreen = ({ onStartGame }) => {
                                 />
                             </View>
                             <View style={styles.buttonsContainer}>
-                                <Button title='Limpiar' onPress={() => handleResetInput()} color='#52528C'/>
-                                <Button title='Confirmar' onPress={() => handleConfirmInput()} color='#52528C'/>
+                                <Button title='Limpiar' onPress={() => handleResetInput()} color={colors.primary}/>
+                                <Button title='Confirmar' onPress={() => handleConfirmInput()} color={colors.primary}/>
                             </View>
                         </Card>
                         {confirmedOutput}

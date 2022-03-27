@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
+import { colors } from '../../constants/theme';
 const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
@@ -6,7 +7,7 @@ export const styles = StyleSheet.create({
         height: height * 0.15,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#52528C',
+        backgroundColor: colors.primary,
     },
     title: {
         fontFamily: 'Montserrat-Bold',

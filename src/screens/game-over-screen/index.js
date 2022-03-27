@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, View, Text, Button } from 'react-native'
 import Card from '../../components/card';
 import { styles } from './styles';
+import { colors } from '../../constants/theme';
 
 const GameOverScreen = ({ rounds, choice, onRestart }) => {
     return (
@@ -11,7 +12,7 @@ const GameOverScreen = ({ rounds, choice, onRestart }) => {
                 <Text style={styles.rounds}>Intentos: {rounds}</Text>
                 <Text style={styles.choice}>¡{choice}!</Text>
             </Card>
-            <Button title='Reiniciar' onPress={onRestart} />
+            <Button title='Reiniciar' onPress={onRestart} color={colors.primary}/>
         </View>
     )
 }

@@ -1,14 +1,14 @@
 export const colors = {
-  primary: '#52528C',
+  primary: '#7D938A',
   secondary: '#fff',
   primaryTitle: '#000000',
   secondaryTitle: '#212121',
   primaryText: '#212121',
   secondaryText: '#fff',
   primaryBackground: '#fff',
-  secondaryBackground: '#52528C',
+  secondaryBackground: '#7D938A',
   shadowColor: '#000',
-  placeholderColor: '#B0A3D4'
+  placeholderColor: '#DED6D6'
 }
 
 export const fontSize = {
